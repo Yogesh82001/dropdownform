@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown List </title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5 ">
+        <h3 class="text-primary  " style="background-color: lightgray;">Insert Dropdown List</h3>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="macro-options-tab" data-toggle="tab" href="#macro-options" role="tab" aria-controls="macro-options" aria-selected="true">Macro Options</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="advanced-options-tab" data-toggle="tab" href="#advanced-options" role="tab" aria-controls="advanced-options" aria-selected="false">Advanced Options</a>
+            </li>
+        </ul>
+
+        <div class="tab-content mt-3" id="myTabContent">
+            
+            <div class="tab-pane fade show active" id="macro-options" role="tabpanel" aria-labelledby="macro-options-tab">
+                <form>
+                    <div class="form-group row">
+                        <label for="listLabel" class="col-sm-2 col-form-label">List Label *</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="listLabel" placeholder="Enter List Label">
+                        </div>
+
+                        <label for="listName" class="col-sm-2 col-form-label">List Name *</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="listName" placeholder="Enter List Name">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="listDescription" class="col-sm-2 col-form-label">List Description</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="listDescription" placeholder="Enter List Description">
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button" aria-expanded="false">
+                            Select
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item " href="#">Option 1</a></li>
+                            <li><a class="dropdown-item" href="#">Option 2</a></li>
+                            <li><a class="dropdown-item" href="#">Option 3</a></li>
+                            <li><a class="dropdown-item" href="#">Option 3</a></li>
+                             <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li> 
+                        </ul>
+                    </div> -->
+
+                    <!-- <div class="form-group row">
+                        <div class="col-sm-2">Multiselect</div>
+                        <div class="col-sm-10">
+                            <input type="checkbox" id="multiselect">
+                        </div>
+                    </div> -->
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Add or Remove Dropdown List</label>
+                        <div class="col-sm-10">
+                            <div id="optionsContainer">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Item">
+                                    <input type="text" class="form-control" placeholder="Value or Confluence Value">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-success addOption" type="button">+</button>
+                                        <button class="btn btn-outline-danger removeOption" type="button">-</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            
+            <div class="tab-pane fade" id="advanced-options" role="tabpanel" aria-labelledby="advanced-options-tab">
+                <!-- <p>Advanced Options Content Here...</p> -->
+                <div class="tab-pane fade show active" id="macro-options" role="tabpanel" aria-labelledby="macro-options-tab">
+                    <form>
+                        <div class="form-group row">
+                            <label for="listLabel" class="col-sm-2 col-form-label">List Label *</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="listLabel" placeholder="Enter List Label">
+                            </div>
+    
+                            <label for="listName" class="col-sm-2 col-form-label">List Name *</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="listName" placeholder="Enter List Name">
+                            </div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <label for="listDescription" class="col-sm-2 col-form-label">List Description</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="listDescription" placeholder="Enter List Description">
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button" aria-expanded="false">
+                                Select
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item " href="#">Option 1</a></li>
+                                <li><a class="dropdown-item" href="#">Option 2</a></li>
+                                <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                 <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li> 
+                            </ul>
+                        </div> -->
+    
+                        <!-- <div class="form-group row">
+                            <div class="col-sm-2">Multiselect</div>
+                            <div class="col-sm-10">
+                                <input type="checkbox" id="multiselect">
+                            </div>
+                        </div> -->
+    
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Add or Remove Dropdown List</label>
+                            <div class="col-sm-10">
+                                <div id="optionsContainer">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Item">
+                                        <input type="text" class="form-control" placeholder="Value or Confluence Value">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-success addOption" type="button">+</button>
+                                            <button class="btn btn-outline-danger removeOption" type="button">-</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container mt-5">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="listDescription" class="form-label">List Description</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="dropdown">
+                                        <input type="text" class="form-control" id="listDescription" placeholder="Enter List Description" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <ul class="dropdown-menu" aria-labelledby="listDescription">
+                                            <li><a class="dropdown-item" href="#">Option 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Option 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                            <li><a class="dropdown-item" href="#">Option 4</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-right mt-3">
+            <button class="btn btn-primary text-dark">Save</button>
+            <button class="btn btn-secondary text-dark" style="background-color: lightgray;">Cancel</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

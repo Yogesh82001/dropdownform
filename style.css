@@ -1,0 +1,46 @@
+.form-label {
+    font-weight: bold;
+}
+
+/* Prevent dropdown from closing on hover */
+.dropdown-menu {
+    margin-top: 0; /* Optional: adjust this to align correctly */
+}
+.dropdown-input {
+    width: 60%; /* Make the input full-width and responsive */
+}
+
+.dropdown-menu {
+    width: 100%; /* Make dropdown width match the input field */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover for desktop */
+}
+
+@media (max-width: 768px) {
+    /* On mobile, disable hover and allow click */
+    .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+}
+.dropdown-menu {
+    width: 100%; /* Full-width dropdown */
+}
+
+/* Show dropdown on focus */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.form-control {
+    height: calc(2.25rem + 2px);
+}
+.form-label {
+    font-weight: 450;
+}
+ .col-md-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 13.333333%;
+    }
